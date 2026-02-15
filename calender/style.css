@@ -19,6 +19,23 @@ header h1 {
   -webkit-text-stroke: 0.1rem white;
   color: transparent;
 }
+form{
+  display: grid;
+  gap: .5rem;
+  max-width: 255px;
+  margin: auto;
+  background-color: teal;
+  padding: .5rem;
+  margin-top: 1rem;
+
+  & > *{
+    padding: .5rem;
+    border: none;
+    border-radius: none;
+    color: brown;
+    font: inherit;
+  }
+}
 #calender {
   margin: auto;
   display: grid;
@@ -104,4 +121,8 @@ section > span {
 }
 [data-event="courseEvent"] {
   --color: navy;
+}
+:target{
+  filter: invert(5);
+  outline: double medium red !important;
 }

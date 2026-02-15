@@ -83,7 +83,8 @@ holidays.forEach((holiday) => {
     element.classList.add(`holiday`);
     element.id = `id${dateData}`;
     element.dataset.event = `${holiday[1]}`;
-    element.title = `${holiday[2]}`;
+    element.title += `✔\t${holiday[2]}\n`;
+    element.tabIndex = 1
   }
 });
 calender.append(newElementsContainer)
