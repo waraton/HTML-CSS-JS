@@ -23,7 +23,7 @@ header{
 }
 /* header ends here */
 #imageEditor{
-  max-width: 1100px;
+  max-width: 700px;
   background-color: skyblue;
   margin-inline: auto;
   font-family: sans-serif;
@@ -35,6 +35,7 @@ figure{
   margin-inline: auto;
   margin-bottom: .25rem;
   max-width: 670px;
+  max-height: 65vh;
   aspect-ratio: 1/1;
   overflow: hidden;
   position: relative;
@@ -67,37 +68,48 @@ figure figcaption{
   align-items: stretch;
   overflow:scroll hidden ;
   justify-content: stretch;
+  max-width: 65vh ;
+  margin-inline: auto ;
   user-select: none;
   transition: linear .5s;
 }
 .tabs>ul>li{
   /* width: clamp(100px 120px 550px); */
   min-width: 80px;
-  transition: linear .5s;
+  transition: all linear .5s;
   flex-grow: 1;
-  font-size: .75rem;
+  font-size: .85rem;
+  text-transform: capitalize;
   background-color: white;
   display: grid;
   place-content: center;
   cursor: pointer;
+  line-height: 2;
 }
 .tabs ul li.active{
   scroll-snap-align: center;
   border-bottom: 2px solid green;
+  color: green;
+  font-weight: bold;
 }
 .tabs ul::-webkit-scrollbar{
   height: 0;
 }
 /* ? edit tools containers */
 [editTools]{
-  padding-top: .25rem;
+  padding:  .5rem;
+  max-width: 65vh ;
+  margin-inline: auto;
+  margin-top: .5rem;
+  overflow-x: auto;
+  max-height: 450px;
 }
 [editTools]>[id]{display: none; transition: .3s linear;}
 
 [editTools]>.currentTab{
   display: block;
 }
-/* 
+/*
  tab actions container
  - text tab edit
  */
@@ -112,7 +124,7 @@ figure figcaption{
   padding: .5rem ;
   border: green solid;
   border-radius: .25rem;
-  outline: none;
+  /* outline: none;*/
 }
 input[type='color']{
   width: 100%;
@@ -127,14 +139,14 @@ input[type='color']{
   font-family: sans-serif;
   resize: vertical;
   min-height: 5rem;
-  outline: none;
+  /* outline: none; */
 }
 #text label{
   margin-bottom: -2%;
 }
 input[value=Apply]{
   border: none;
-  outline: none;
+  /* outline: none; */
   border-radius: 0%;
   background-color: green;
   color: white;
@@ -227,7 +239,7 @@ input[value=Apply]{
   }
   figure{
     margin: initial;
-    max-height: 500px;
+    max-height: 450px;
     height: auto;
     aspect-ratio: 1/1;
     grid-column: 1/2;    grid-row:2/3;
@@ -246,6 +258,6 @@ input[value=Apply]{
   #imgBg.currentTab{
     display: grid;
     grid-template-rows:  auto;
-    grid-template-columns: repeat(auto-fit, minmax(80px, 1fr))
+    grid-template-columns: repeat(auto-fit, minmax(120px, 1fr))
   }
 }
