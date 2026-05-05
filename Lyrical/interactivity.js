@@ -9,7 +9,7 @@ const audio = document.querySelector("audio");
 const audioSources = {
   tunyar: ["audios/Tunyar_By_Hardlife_Avenue_Stars_Ft_Suke_Sukari.mp3", Tunyar],
   ourGodIsGood: ["audios/Our-God-Is-Good.mp3", OurGodIsGood],
-  lifeline:["audios/lifeline-Mandisa.mp3",Lifeline],
+  lifeline:["audios/Lifeline-Mandisa.mp3",Lifeline],
 };
 
 let lyricInterval;
