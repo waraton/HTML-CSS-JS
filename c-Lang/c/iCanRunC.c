@@ -12,20 +12,20 @@ int main()
   printf("\n\tLEFTsHIFT: %d << 2 = %d", a, a << 2);
   printf("\n\tRIGHTsHIFT: %d >> 2 = %d", a, a >> 2);
   int e;
-  printf("\nSize of int is %d bytes", sizeof(e));
+  printf("\nSize of int is %ld bytes", sizeof(e));
   float f;
-  printf("\nSize of float is %d bytes", sizeof(f));
+  printf("\nSize of float is %ld bytes", sizeof(f));
   double g;
-  printf("\nSize of double is %d bytes", sizeof(g));
+  printf("\nSize of double is %ld bytes", sizeof(g));
   char h;
-  printf("\nSize of char is %d bytes", sizeof(h));
+  printf("\nSize of char is %ld bytes", sizeof(h));
   long i;
-  printf("\nSize of long is %d bytes", sizeof(i));
+  printf("\nSize of long is %ld bytes", sizeof(i));
   short j;
-  printf("\nSize of short is %d bytes", sizeof(j));
-  printf("\n\vEnter \vA value for e >>", sizeof(j));
+  printf("\nSize of short is %ld bytes", sizeof(j));
+  printf("\n\vEnter \vA value for e >>");
   /* escapees */
-  printf("\\\n audible alert\a.back[\b]space.form feed \f. A new line\n. carriage return\r. tab\t. vertical tab \v. Question mark\?. Backslash\\.Null\0");
+  printf("\\\n audible alert\a.back[\b]space.form feed \f. A new line\n. carriage return\r. tab\t. vertical tab \v. Question mark\?. Backslash\\.Null...");
   /* while */
   while (a < /* 46 */ 85)
   {
