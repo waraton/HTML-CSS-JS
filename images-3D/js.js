@@ -10,29 +10,29 @@ function rotate() {
     containerEl.style.transform = `perspective(1000px) rotateX(${x}deg) rotateY(${y}deg) rotateZ(${z}deg)`
 }
 leftButton.addEventListener(`click`,()=>{
-    y += 30;
+    y += 10;
     rotate();
 })
 rightButton.addEventListener(`click`,()=>{
-    y -= 30;
+    y -= 10;
     rotate();
 })
 document.addEventListener(`keydown`,e=>{
     console.log(e.key);
     if (e.key.toLowerCase() == `arrowright`) {
-        z += 30;
+        z += 10;
         rotate();
     }
     if (e.key.toLowerCase() == `arrowleft`) {
-        z -= 30;
+        z -= 10;
         rotate();
     }
     if (e.key.toLowerCase() == `arrowup`) {
-        x += 30;
+        x += 10;
         rotate();
     }
     if (e.key.toLowerCase() == `arrowdown`) {
-        x -= 30;
+        x -= 10;
         rotate();
     }
 })
