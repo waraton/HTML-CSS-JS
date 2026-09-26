@@ -6,9 +6,6 @@ import { testData2, renderDefinitions } from "./test-data.js";
  * @const {Array} data data returned to the user that can be displayed to the front end
  * @function  fetchDictionaryDefinition used to send data to api and retrieve responce
  */
-const URL = `https://api.dictionaryapi.dev/api/v2/entries/en/`;
-// proxy to bypass CORS restriction by appending the neccesay acess control
-const PROXY = 'https://corsproxy.io/'
 let loadingStatus = false;
 let now;
 const WORD = document.querySelector(`input[id='word']`);
@@ -40,7 +37,7 @@ async function fetchDictionaryDefinition(WORD) {
   try {
     now = new Date();
     const response = await fetch(
-      `${PROXY}?${URL}{WORD}`
+      `https://api.dictionaryapi.dev/api/v2/entries/en/${WORD}`
     );
     const data = await response.json();
 
