@@ -1,4 +1,4 @@
-import { testData2, renderDefinitions } from "./testData.js";
+import { testData2, renderDefinitions } from "./test-data.js";
 /**
  *
  * @param {string} WORD Word whose meaning is to be fetched
