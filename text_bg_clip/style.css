@@ -21,7 +21,7 @@ h1{
     letter-spacing: -15px;
     line-height: .75;
     padding: .5rem 1rem;
-    background: url(IMG_20211221_075939_994_transcpr.jpg) no-repeat center/cover;
+    background: url(image.jpg) no-repeat center/cover;
     background-clip: text;
     -webkit-background-clip: text;
     color: transparent;
@@ -48,7 +48,7 @@ figure img.hovered{
     cursor: zoom-in;
 }
 figure:has(img.hovered){
-    border-radius: 23rem;
+    border-radius: 2rem;
     border: .125rem solid aqua;
     background-clip: border-box;
 } 

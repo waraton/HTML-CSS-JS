@@ -7,7 +7,7 @@ button.addEventListener('click',()=>{
 })
 
 const bgColor = ()=>{
-    return `RGB(${Math.floor(Math.random()*255)},${Math.floor(Math.random()*255)},${Math.floor(Math.random()*255)})`
+    return `RGB(${Math.floor(Math.random()*255).toString().padStart(3,0)},${Math.floor(Math.random()*255).toString().padStart(3,0)},${Math.floor(Math.random()*255).toString().padStart(3,0)})`
 }
 
 document.querySelector(`figure img`).addEventListener(`mouseenter`,(e)=>{
